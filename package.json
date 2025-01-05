@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy": "ng deploy --base-href=/angular-loader-option-sample/"
+    "deploy": "ng cache clean && ng deploy --base-href=/angular-loader-option-sample/"
   },
   "private": true,
   "dependencies": {
