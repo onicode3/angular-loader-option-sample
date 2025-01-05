@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import jpegIcon from './assets/icon.jpeg';
 import pngIcon from './assets/icon.png';
 import svgIcon from './assets/icon.svg';
-import webpIcon from './assets/icon.webp';
+import webpIcon from './assets/icon.gif';
 
 import svgTextIcon from './assets/icon.svg' with { loader: 'text' };
 import svgBinaryIcon from './assets/icon.svg' with { loader: 'binary' };
