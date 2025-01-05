@@ -13,6 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "loader": {
+              ".svg": "text",
+              ".webp": "binary",
+              ".jpeg": "file",
+              ".png": "empty"
+            },
             "outputPath": "dist/angular-loader-option-sample",
             "index": "src/index.html",
             "browser": "src/main.ts",
