@@ -4,9 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   imports: [],
   template: `
-    <>
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
 `,
-  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'angular-loader-option-sample';
