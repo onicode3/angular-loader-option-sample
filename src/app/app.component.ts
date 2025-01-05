@@ -7,10 +7,13 @@ import jpgIcon from './assets/icon.jpg';
 import svgTextIcon from './assets/icon.svg' with { loader: 'text' };
 import svgBinaryIcon from './assets/icon.svg' with { loader: 'binary' };
 import svgFileIcon from './assets/icon.svg' with { loader: 'file' };
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [
+    NgOptimizedImage
+  ],
   template: `
     <h1>Loader Option Sample</h1>
     <div class="m-4">
@@ -23,9 +26,10 @@ import svgFileIcon from './assets/icon.svg' with { loader: 'file' };
         <div class="rounded-md bg-red-50 p-4">
           <code>{{ jpgIcon }}</code>
         </div>
-        <h3>File extension Jpeg</h3>
+        <h3>File extension jpeg</h3>
         <div class="rounded-md bg-red-50 p-4">
           <code>{{ jpegIcon }}</code>
+          <img alt="img" [ngSrc]="jpegIcon" width="200" height="200"/>
         </div>
         <h3>File extension Png</h3>
         <div class="rounded-md bg-red-50 p-4">
@@ -42,6 +46,7 @@ import svgFileIcon from './assets/icon.svg' with { loader: 'file' };
         <h3>Loader File</h3>
         <div class="rounded-md bg-red-50 p-4">
           <code>{{ svgFileIcon }}</code>
+          <img alt="img" [ngSrc]="svgFileIcon" width="200" height="200"/>
         </div>
       </div>
     </div>
