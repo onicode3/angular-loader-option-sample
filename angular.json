@@ -15,7 +15,7 @@
           "options": {
             "loader": {
               ".svg": "text",
-              ".gif": "binary",
+              ".tif": "binary",
               ".jpeg": "file",
               ".png": "empty"
             },
