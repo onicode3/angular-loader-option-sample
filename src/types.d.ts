@@ -3,11 +3,6 @@ declare module "*.svg" {
   export default content;
 }
 
-declare module "*.webp" {
-  const content: string;
-  export default content;
-}
-
 declare module "*.jpeg" {
   const content: string;
   export default content;
@@ -18,7 +13,7 @@ declare module "*.png" {
   export default content;
 }
 
-declare module "*.gif" {
+declare module "*.tif" {
   const content: string;
   export default content;
 }
