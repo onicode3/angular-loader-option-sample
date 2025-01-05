@@ -19,7 +19,7 @@ import svgFileIcon from './assets/icon.svg' with { loader: 'file' };
         <div class="rounded-md bg-red-50 p-4">
           <code>{{ svgIcon }}</code>
         </div>
-        <h3>File extension Webp</h3>
+        <h3>File extension tif</h3>
         <div class="rounded-md bg-red-50 p-4">
           <code>{{ tifIcon }}</code>
         </div>
@@ -48,8 +48,10 @@ import svgFileIcon from './assets/icon.svg' with { loader: 'file' };
   `,
 })
 export class AppComponent {
+  private readonly decoder = new TextDecoder("utf-8");
+
   protected readonly svgIcon = svgIcon;
-  protected readonly tifIcon = tifIcon;
+  protected readonly tifIcon = this.decoder.decode(tifIcon).slice(0, 200) + "...";
   protected readonly jpegIcon = jpegIcon;
   protected readonly pngIcon = JSON.stringify(pngIcon);
   protected readonly svgTextIcon = svgTextIcon;

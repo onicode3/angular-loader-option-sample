@@ -14,6 +14,6 @@ declare module "*.png" {
 }
 
 declare module "*.tif" {
-  const content: string;
+  const content: Uint8Array;
   export default content;
 }
