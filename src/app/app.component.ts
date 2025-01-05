@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import jpegIcon from './assets/icon.jpeg';
 import pngIcon from './assets/icon.png';
 import svgIcon from './assets/icon.svg';
-import gifIcon from './assets/icon.gif';
+import jpgIcon from './assets/icon.jpg';
 
 import svgTextIcon from './assets/icon.svg' with { loader: 'text' };
 import svgBinaryIcon from './assets/icon.svg' with { loader: 'binary' };
@@ -21,7 +21,7 @@ import svgFileIcon from './assets/icon.svg' with { loader: 'file' };
         </div>
         <h3>File extension gif</h3>
         <div class="rounded-md bg-red-50 p-4">
-          <code>{{ gifIcon }}</code>
+          <code>{{ jpgIcon }}</code>
         </div>
         <h3>File extension Jpeg</h3>
         <div class="rounded-md bg-red-50 p-4">
@@ -51,7 +51,7 @@ export class AppComponent {
   private readonly decoder = new TextDecoder("utf-8");
 
   protected readonly svgIcon = svgIcon;
-  protected readonly gifIcon = this.decoder.decode(gifIcon).slice(0, 200) + "...";
+  protected readonly jpgIcon = this.decoder.decode(jpgIcon).slice(0, 200) + "...";
   protected readonly jpegIcon = jpegIcon;
   protected readonly pngIcon = JSON.stringify(pngIcon);
   protected readonly svgTextIcon = svgTextIcon;

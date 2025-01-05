@@ -13,7 +13,7 @@ declare module "*.png" {
   export default content;
 }
 
-declare module "*.gif" {
+declare module "*.jpg" {
   const content: Uint8Array;
   export default content;
 }
