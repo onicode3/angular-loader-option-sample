@@ -19,7 +19,7 @@ import svgFileIcon from './assets/icon.svg' with { loader: 'file' };
         <div class="rounded-md bg-red-50 p-4">
           <code>{{ svgIcon }}</code>
         </div>
-        <h3>File extension gif</h3>
+        <h3>File extension jpg</h3>
         <div class="rounded-md bg-red-50 p-4">
           <code>{{ jpgIcon }}</code>
         </div>
